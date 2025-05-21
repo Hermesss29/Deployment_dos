@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: BackendDeploy
+    env: docker
+    plan: Free
+    dockerfilePath: Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: MYSQL_ADDON_URI
+        value: mysql://u92nlxfmle4fvf6h:7fzsPcj4sDqpfPkoTjwJ@bq0wp5c2uwobu1twgkii-mysql.services.clever-cloud.com:3306/bq0wp5c2uwobu1twgkii
+      - key: MYSQL_ADDON_USER
+        value: u92nlxfmle4fvf6h
+      - key: MYSQL_ADDON_PASSWORD
+        value: 7fzsPcj4sDqpfPkoTjwJ
